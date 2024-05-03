@@ -1,0 +1,135 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 4rem;
+  background-color: #393939;
+  color: white;
+
+  .feedback-heading {
+    margin-top: 13px;
+    font-size: 3.5rem;
+    font-weight: 550;
+    font-family: "League Spartan", sans-serif;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+
+    .card-item {
+      display: flex;
+      align-items: center;
+      background-color: #393939;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #ffffff;
+      padding: 1rem;
+      text-decoration: none;
+      width: 230px;
+      margin-right: 20px;
+      border: 2px solid #d9d2d2;
+
+      svg {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+      }
+
+      &:hover {
+        background-color: #141414;
+      }
+    }
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+
+    input {
+      font-size: 16px;
+      background-color: #d9d2d2;
+      border: none;
+      border-radius: 7px;
+      outline: none;
+      padding: 1rem;
+      width: 100%;
+      margin-bottom: 20px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 15px #e1dada;
+      }
+    }
+
+    textarea {
+      font-size: 16px;
+      background-color: #d9d2d2;
+      border: none;
+      border-radius: 7px;
+      outline: none;
+      padding: 1rem;
+      width: 100%;
+      margin-bottom: 20px;
+      height: 170px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 15px #e1dada;
+      }
+    }
+
+    button {
+      background-color: #6baa75;
+      border: none;
+      border-radius: 10px;
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: 530;
+      font-size: 16px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      margin-bottom: 13px;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    .message {
+      color: #a3a3a3;
+      font-weight: 600;
+      font-size: 1.2rem;
+      align-self: center;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .feedback-heading {
+    font-size: 2rem !important;
+  }
+
+  .cards {
+    flex-direction: column;
+
+    .card-item {
+      margin-bottom: 2rem;
+      margin-right: 0 !important;
+      width: 240px !important;
+
+      #mailicon {
+        transform: scale(1.5) !important;
+      }
+    }
+  }
+}
+
+.mail-icon {
+  width: 10px;
+}
